@@ -1,0 +1,65 @@
+# Day 3 – Flip-Flops & Sequential RTL Design
+
+## Overview
+
+Day 3 focused on understanding flip-flops, glitches, sequential logic, and different RTL coding styles for reset and set operations.
+
+## Topics Covered
+
+### 1. Need for Flip-Flops
+- Difference between combinational and sequential logic
+- Propagation delay and glitches
+- How glitches propagate through combinational logic
+- Flip-flops as storage elements
+- Flip-flops help isolate and control glitches using clock edges
+
+### 2. D Flip-Flop
+- Basic D flip-flop operation
+- Clock-controlled data storage
+- Data (`D`) and output (`Q`)
+- Output changes according to the active clock edge
+
+### 3. Reset and Set
+- Need for initializing the state of a flip-flop
+- Reset and set control signals
+- Synchronous reset
+- Asynchronous reset
+- Synchronous set
+- Asynchronous set
+
+### 4. RTL Coding of Flip-Flops
+- Verilog coding styles for sequential logic
+- `always` blocks and clock sensitivity
+- Coding reset/set conditions
+- Understanding how RTL code maps to flip-flops
+
+### 5. Simulation
+- Simulating sequential RTL using Icarus Verilog
+- Creating and using testbenches
+- Generating VCD waveforms
+- Observing clock, input, reset/set and output signals using GTKWave
+
+### 6. Synthesis
+- Synthesizing flip-flop based RTL using Yosys
+- Mapping RTL flip-flops to technology library cells
+- `dfflibmap`
+- Technology mapping using `abc`
+- Understanding the generated gate-level netlist
+
+## Key Learnings
+
+- Combinational logic can produce glitches due to different propagation delays.
+- Flip-flops provide controlled storage and prevent glitches from directly propagating between logic stages.
+- Reset and set signals establish a known state for sequential circuits.
+- Reset/set operations can be synchronous or asynchronous.
+- RTL coding style determines how sequential hardware is inferred during synthesis.
+- The synthesized design is mapped to available standard cells in the technology library.
+
+## Tools Used
+
+- Verilog
+- Icarus Verilog
+- GTKWave
+- Yosys
+- SKY130 Standard Cell Library
+- Linux / Ubuntu
