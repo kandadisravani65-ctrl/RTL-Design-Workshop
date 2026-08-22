@@ -61,3 +61,14 @@ GTKWave Analysis
 Yosys Synthesis
      ↓
 Gate-Level Representation
+
+
+Learning Outcomes
+
+Understanding Verilog RTL coding
+Writing basic RTL modules
+Developing testbenches
+Performing RTL simulation
+Analyzing waveforms
+Understanding the synthesis process
+Using open-source EDA tools
