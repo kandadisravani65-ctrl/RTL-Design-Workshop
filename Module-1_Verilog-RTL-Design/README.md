@@ -63,7 +63,7 @@ Yosys Synthesis
 Gate-Level Representation
 
 
-Learning Outcomes
+## Learning Outcomes
 
 Understanding Verilog RTL coding
 Writing basic RTL modules
