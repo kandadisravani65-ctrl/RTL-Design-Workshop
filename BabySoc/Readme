@@ -1,0 +1,45 @@
+# BabySoC – Presynthesis
+
+## 1. Project Overview
+
+- BabySoC is a small mixed-signal System-on-Chip design integrating:
+  - RISC-V based digital core
+  - DAC
+  - PLL
+  - Digital control logic
+- This repository documents the **presynthesis simulation and verification flow** of BabySoC.
+- The main objective is to verify the interaction between the digital RISC-V core and the analog/mixed-signal behavioral models before physical implementation.
+
+---
+
+## 2. BabySoC Architecture
+
+The BabySoC design contains the following major blocks:
+
+- **RVMYTH Core**
+  - RISC-V based digital processor
+  - Generates the 10-bit `RV_TO_DAC` digital output code
+
+- **DAC (`avsddac`)**
+  - Converts the 10-bit digital code into an analog real-valued output
+  - Uses:
+    - `VREFH` = high reference voltage
+    - `VREFL` = low reference voltage
+  - Produces the analog `OUT`
+
+- **PLL (`avsdpll`)**
+  - Provides the clock generation/control interface
+  - Connected to:
+    - `REF`
+    - `VCO_IN`
+    - `ENb_CP`
+    - `ENb_VCO`
+
+---
+
+## 3. Top-Level BabySoC
+
+Top-level module:
+
+```text
+vsdbabysoc
