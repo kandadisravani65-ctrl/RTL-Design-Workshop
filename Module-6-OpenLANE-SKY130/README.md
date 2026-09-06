@@ -1,4 +1,4 @@
-# Module 1 — Inception of Open-Source EDA, OpenLANE and SKY130 PDK
+# Module 6 — Inception of Open-Source EDA, OpenLANE and SKY130 PDK
 
 ## 📌 Introduction
 
