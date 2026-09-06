@@ -1,0 +1,8 @@
+Design:
+picorv32a
+
+PDK:
+SKY130A
+
+Standard Cell Library:
+sky130_fd_sc_hd
