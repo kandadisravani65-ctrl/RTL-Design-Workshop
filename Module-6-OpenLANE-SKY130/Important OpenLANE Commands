@@ -1,0 +1,25 @@
+# Important OpenLANE Commands
+
+## 1. Start OpenLANE
+
+```bash
+./flow.tcl -interactive
+```
+
+## 2. Load OpenLANE
+
+```tcl
+package require openlane 0.9
+```
+
+## 3. Prepare the Design
+
+```tcl
+prep -design picorv32a
+```
+
+## 4. Run Synthesis
+
+```tcl
+run_synthesis
+```
