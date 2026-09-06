@@ -1,4 +1,4 @@
-# Module 2 — Floorplanning, Library Cells and Placement
+# Module 7 — Floorplanning, Library Cells and Placement
 
 ## 📌 Introduction
 
